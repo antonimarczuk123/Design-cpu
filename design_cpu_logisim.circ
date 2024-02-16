@@ -4,7 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </tool>
@@ -45,7 +45,9 @@
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool"/>
     <sep/>
-    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="north"/>
+    </tool>
     <tool lib="0" name="Pin">
       <a name="output" val="true"/>
       <a name="width" val="8"/>
@@ -8736,5 +8738,6 @@
     <a name="circuit" val="CPU_ADDER"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="1" loc="(630,270)" name="XOR Gate"/>
   </circuit>
 </project>
