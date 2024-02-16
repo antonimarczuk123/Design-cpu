@@ -66,7 +66,6 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp loc="(430,360)" name="CPU_RAM_32"/>
   </circuit>
   <circuit name="CPU_MEM_1">
     <a name="appearance" val="logisim_evolution"/>
@@ -8731,5 +8730,11 @@
     <wire from="(990,540)" to="(990,650)"/>
     <wire from="(990,650)" to="(990,890)"/>
     <wire from="(990,890)" to="(990,4860)"/>
+  </circuit>
+  <circuit name="CPU_ADDER">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="CPU_ADDER"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
   </circuit>
 </project>
