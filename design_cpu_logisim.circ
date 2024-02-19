@@ -9130,7 +9130,7 @@
     <comp lib="0" loc="(710,60)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="o"/>
+      <a name="label" val="sum"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -9364,7 +9364,7 @@
     <comp lib="0" loc="(300,270)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="o"/>
+      <a name="label" val="not_8"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -9427,7 +9427,7 @@
     <comp lib="0" loc="(790,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="o"/>
+      <a name="label" val="and_8"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -9543,7 +9543,7 @@
     <comp lib="0" loc="(710,60)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="o"/>
+      <a name="label" val="or_8"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -9659,7 +9659,7 @@
     <comp lib="0" loc="(800,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="o"/>
+      <a name="label" val="xor_8"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -9821,50 +9821,100 @@
     <a name="circuit" val="CPU_ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect height="4" stroke="none" width="10" x="50" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">a</text>
+      <rect height="4" stroke="none" width="10" x="50" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="84">b</text>
+      <rect height="3" stroke="none" width="10" x="50" y="99"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="104">carry_in</text>
+      <rect height="3" stroke="none" width="10" x="50" y="119"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="124">c1</text>
+      <rect height="3" stroke="none" width="10" x="50" y="139"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="144">c2</text>
+      <rect height="3" stroke="none" width="10" x="50" y="159"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="164">c3</text>
+      <rect height="3" stroke="none" width="10" x="260" y="59"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="64">larger</text>
+      <rect height="3" stroke="none" width="10" x="260" y="79"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="84">equal</text>
+      <rect height="3" stroke="none" width="10" x="260" y="99"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="104">zero</text>
+      <rect height="4" stroke="none" width="10" x="260" y="118"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="124">o</text>
+      <rect height="3" stroke="none" width="10" x="260" y="139"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="144">carry_out</text>
+      <rect height="20" stroke="none" width="200" x="60" y="170"/>
+      <rect fill="none" height="140" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="184">CPU_ALU</text>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="280,250" x="50" y="60"/>
+      <circ-port dir="in" pin="280,330" x="50" y="80"/>
+      <circ-port dir="in" pin="280,390" x="50" y="100"/>
+      <circ-port dir="in" pin="380,680" x="50" y="120"/>
+      <circ-port dir="in" pin="380,700" x="50" y="140"/>
+      <circ-port dir="in" pin="380,720" x="50" y="160"/>
+      <circ-port dir="out" pin="1220,250" x="270" y="100"/>
+      <circ-port dir="out" pin="980,320" x="270" y="120"/>
+      <circ-port dir="out" pin="980,590" x="270" y="140"/>
+      <circ-port dir="out" pin="980,70" x="270" y="60"/>
+      <circ-port dir="out" pin="980,90" x="270" y="80"/>
+    </appear>
     <comp lib="0" loc="(1220,250)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="zero"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(280,250)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(280,330)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(280,390)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="carry_in"/>
     </comp>
     <comp lib="0" loc="(380,680)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="c1"/>
     </comp>
     <comp lib="0" loc="(380,700)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="c2"/>
     </comp>
     <comp lib="0" loc="(380,720)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="c3"/>
     </comp>
     <comp lib="0" loc="(980,320)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="o"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(980,590)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="carry_out"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(980,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="larger"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(980,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="equal"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="1" loc="(660,410)" name="Controlled Buffer"/>
