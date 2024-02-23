@@ -60,7 +60,12 @@ with open("program.asm", "r") as file:
 
 with open("program.bin", "r") as fileBin:
     with open("program.hex", "w") as fileHex:
-        for binaryNumber in fileBin:
-            hexNumber = hex(int(binaryNumber, 2))
+        for i, binaryNumber in enumerate(fileBin):
+            try:
+                hexNumber = hex(int(binaryNumber, 2))
+            except:
+                print(f"Error: line {i+1}")
+                break
             fileHex.write(f"{hexNumber[2:]}\n")
 
+print("Finished!")
