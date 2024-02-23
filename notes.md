@@ -44,9 +44,9 @@
 
 1. REG B e , IAR s
 
-* ### JMP ADDR
+* ### JMP
 
-<img src="img/JMP-ADDR-instr.png" alt="">
+<img src="img/JMP-instr.png" alt="">
 
 1. IAR e , MAR s
 2. RAM e , IAR s
@@ -58,6 +58,14 @@
 1. IAR e , MAR s , BUS1 , ACC s
 2. ACC e , IAR s
 3. ( RAMe e , IAR s ) : IF
+
+* ### CLF
+
+<img src="img/CLF-instr.png" alt="">
+
+* ### END
+
+<img src="img/END-instr.png" alt="">
 
 
 
