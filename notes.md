@@ -16,19 +16,19 @@
 2. ALU decoder , REG B e , ACC s , FLAG s
 3. ACC e , REG B s
 
-* ### STORE
-
-<img src="img/STORE-instructions.png" alt="">
-
-1. REG A e , MAR s
-2. RAM e , REG B s
-
 * ### LOAD
 
 <img src="img/LOAD-instructions.png" alt="">
 
 1. REG A e , MAR s
 2. REG B e , RAM s
+
+* ### STORE
+
+<img src="img/STORE-instructions.png" alt="">
+
+1. REG A e , MAR s
+2. RAM e , REG B s
 
 * ### DATA
 
