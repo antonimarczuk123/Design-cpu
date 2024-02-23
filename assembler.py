@@ -58,3 +58,5 @@ with open("program.asm", "r") as file:
 
     with open("program.bin", "w") as file:
         file.write(source)
+
+print("Program assembled successfully!")
