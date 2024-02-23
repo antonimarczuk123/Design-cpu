@@ -43,7 +43,6 @@ assemblyDictionary = {
 }
 
 
-
 with open("program.asm", "r") as file:
     source = file.read()
 
@@ -55,8 +54,12 @@ with open("program.asm", "r") as file:
             f" {assemblyDictionary[code]}")
 
     source = source.replace(" ", "")
-
     with open("program.bin", "w") as file:
         file.write(source)
 
-print("Program assembled successfully!")
+
+with open("program.bin", "r") as fileBin:
+    with open("program.hex", "w") as fileHex:
+        for binaryNumber in fileBin:
+            hexNumber = hex(int(binaryNumber, 2))
+            fileHex.write(f"{hexNumber[2:]}\n")
