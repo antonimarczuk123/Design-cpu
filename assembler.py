@@ -63,3 +63,4 @@ with open("program.bin", "r") as fileBin:
         for binaryNumber in fileBin:
             hexNumber = hex(int(binaryNumber, 2))
             fileHex.write(f"{hexNumber[2:]}\n")
+
