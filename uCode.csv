@@ -1,0 +1,4 @@
+instr,op code,RAe,RAs,RBe,RBs,SPe,SPs,IARe,IARs,IRs,TMPs,ACCe,ACCs,ADDRs,CTRLe,CTRLs,ALU
+ADD  ,1000   ,1  ,   ,   ,   ,   ,   ,    ,    ,   ,1   ,    ,    ,     ,     ,     ,
+ADD  ,1000   ,   ,   ,1  ,   ,   ,   ,    ,    ,   ,    ,    ,1   ,     ,     ,     ,000
+ADD  ,1000   ,   ,   ,   ,1  ,   ,   ,    ,    ,   ,    ,1   ,    ,     ,     ,     ,
